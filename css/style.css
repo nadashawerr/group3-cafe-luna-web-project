@@ -457,3 +457,26 @@ h3 {
     border-top: 1px solid rgba(246, 248, 162, 0.1);
     padding-top: 20px;
 }
+
+/*Animations*/
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeLong {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
