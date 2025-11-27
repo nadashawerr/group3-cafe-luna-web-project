@@ -282,3 +282,178 @@ body {
     color: rgb(228, 194, 2);
     font-size: 25px;
 }
+
+/*--------------------------------------------------------------*/
+/*FOOTER STYLES*/
+/*START OF AI HELP PROMPT*/
+footer {
+    position: relative;            
+    background-color: #161515;        
+    padding: 30px 20px;
+    border-top: 6px solid #FFF287;
+    overflow: hidden;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* Semi-Transparent Coffee Beans Image for Footer Background */
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url("../images/coffee-beans.png") repeat center center;
+    background-size: cover;
+    background-position: bottom;
+    opacity: 0.1;                      
+}
+
+/* Ensure all footer content is above the image */
+footer * {
+    position: relative;
+    z-index: 1;
+}
+/*END OF AI PROMPT*/
+
+/*Footer Grid Layout*/
+.footer {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(50px, 0.25fr));
+    margin-top: 10px;
+}
+
+/*Quick Links & Contact Us Section*/
+.quick-links a , .contact-us {
+    color: white;
+    font-size: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+/*When Hovering Over Text Links*/
+.quick-links a:hover {
+    color: #FFF287;
+    transition: all 0.3s ease;
+}
+
+/*Social Media Icons*/
+.social-media a {
+    color: white;
+    font-size: 22px;
+    gap: 50px;
+    margin: 5px;
+    flex-direction: row;
+    text-decoration: none;
+    background: #71543f;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.social-media a:hover {
+    color: #8A0000;
+    transition: all 0.3s ease;
+}
+
+h3 {
+    color: #FFF287;
+    font-size: 24px;
+    padding-left: 20px;
+}
+
+/*Newsletter Section*/
+.footer {
+    position: relative;
+}
+
+.newsletter button {
+    border-radius: 22px;
+    background: #FFF287;
+    padding: 10px 30px;
+    font-weight: 200;
+    font-size: 20px;
+    width: 765px;
+    height: 50px;
+    border-radius: 22px;
+    color: #8A0000;
+    margin-top: 10px;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    padding-left: 180px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#nl-btn:hover{
+    background: #927866;
+    color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.newsletter input {
+    background: white;
+    padding: 10px 30px;
+    font-weight: 200;
+    font-size: 20px;
+    width: 700px;
+    border-radius: 22px;
+    color: #8A0000;
+}
+
+.newsletter h1 {
+    font-size: 40px;
+    color: #FFF287;
+}
+
+.f3-column {
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
+    position: relative;
+    padding-bottom: 70px;
+}
+
+.f1-column h3, .f2-column h3, .f3-column h1 {
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.f1-column h3::after, .f2-column h3::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background: #927866;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.f3-column h1::after {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: #927866;
+    border-radius: 5px;
+}
+
+/*Copyright Section*/
+.copyright {
+    color: #faf3b1;
+    font-size: 20px;
+    text-align: center;
+    border-top: 1px solid rgba(246, 248, 162, 0.1);
+    padding-top: 20px;
+}
