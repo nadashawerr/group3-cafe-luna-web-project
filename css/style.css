@@ -1,0 +1,9 @@
+/* CafeLuna Project - Starter Styles */
+
+body {
+    font-family: 'Vend Sans', 'Sans-Serif';
+    margin: 20;
+    padding: 20;
+    background: #161515;
+    padding-top: 200px;
+}
