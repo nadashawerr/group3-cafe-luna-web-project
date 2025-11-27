@@ -134,3 +134,151 @@ body {
     border: 4px solid #FFF287;
     color: white;
 }
+
+/*--------------------------------------------------------------------------------*/
+/*PRODUCTS MINI MENU*/
+
+/*Seedling Icon*/
+.pp i {
+    color: #FFF287;
+    font-size: 55px;
+    margin: 0;
+    line-height: 0%;
+}
+
+/*MINI MENU HEADER*/
+.menu-header {
+    font-size: 40px;
+    font-family: 'Dancing Script', 'Sans-Serif';
+    text-align: center;
+    align-items: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+
+.menu-header h1 {
+    font-size: 90px;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.menu-header h1::after {
+    content: '';
+    position: absolute;
+    width: 350px;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background: #927866;
+    border-radius: 5px;
+    margin-left: 890px;
+}
+
+/*Menu Grid*/
+.product-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 70px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 70px;
+    padding-bottom: 150px; 
+    animation: fadeLong 1s ease-out; 
+}
+
+/*Product Cards*/
+.product-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    position: relative;
+    top: 0;
+    padding-bottom: 15px;
+    box-shadow: 0 10px 20px rgba(52, 43, 43, 0.4);
+}
+
+/*Move the Cards Upward When Hovering Over the Product Cards*/
+.product-card:hover {
+    transform: translateY(-15px);
+    border: 2px solid #FFF287;
+}
+
+/*Product Image Dimensions*/
+.product-img {
+    height: 500px;
+    overflow: hidden;
+}
+
+/*Product Card Image Dimensions*/
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/*Amount of Zoom When Hovering Over Product Cards*/
+.product-card:hover .product-img img {
+    transform: scale(1.05);
+}
+
+/*Product Info Section*/
+.product-info {
+    padding-left: 25px;
+    padding-right: 25px;
+    position: relative;
+    text-align: left;
+}
+
+/*Product Tags (BESTSELLER, NEW, LIMITED)*/
+.product-tag {
+    position: absolute;
+    top: -60px;
+    right: 4%;
+    background: #FFF287;
+    color: #8A0000;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/*Product Names*/
+.product-name {
+    font-size: 35px;
+    color: #8A0000;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/*Product Descriptions*/
+.product-descr {
+    color: #161515;
+    margin-bottom: 30px;
+    font-size: 21px;
+}
+
+/*Product Footer*/
+.product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Product Price*/
+.product-price {
+    font-size: 40px;
+    font-weight: 750;
+    color: #8A0000;
+    padding-bottom: 10px;
+}
+
+/*Product Rating*/
+.product-rating {
+    color: rgb(228, 194, 2);
+    font-size: 25px;
+}
