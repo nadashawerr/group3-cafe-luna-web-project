@@ -1,4 +1,6 @@
+
 # group3-cafe-luna-web-project
+
 # Café Luna – Local Café Website
 
 ## Overview
@@ -25,3 +27,5 @@ CafeLuna_Project/
 
 ## Submission
 Compress and submit as `CafeLuna_SetLetter_GroupNumber.zip`.
+
+
