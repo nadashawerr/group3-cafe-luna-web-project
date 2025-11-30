@@ -1,728 +1,167 @@
-/* CafeLuna Project - Starter Styles */
-
-body {
-    font-family: 'Vend Sans', 'Sans-Serif';
-    margin: 20;
-    padding: 20;
-    background: #161515;
-    padding-top: 200px;
-}
-/*--------------------------------------------------------------------*/
-/*MAIN PAGE STYLES*/
-/* DAILY SPECIAL STYLES */
-.daily-special {
-    position: relative;
-    margin-bottom: 120px;
-    animation: fade 1s ease-out;
-}
-
-/*Daily Special Text Card*/
-.ds-text-card {
-    background: #483223;
-    border-radius: 5px;
-    width: 100%;
-    height: 850px;
-    padding: 50px 80px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-sizing: border-box;
-    z-index: 1;
-    border-bottom: 6px solid #FFF287;
-    border-top: 6px solid #FFF287;
-}
-
-.daily-special::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;  
-    background-size: cover;          
-    background-position: bottom;
-    opacity: 0.9;                      
-    z-index: 0;                        
-}
-
-/*Daily Special Header*/
-.ds-card {
-    background: white;
-    border-radius: 40px;
-    border-top: 8px solid #FFF287;
-    overflow: hidden;
-    transition: all 0.4s ease;
-    width: 850px;
-    height: auto;
-    position: absolute;
-    top: -100px;
-    right: 80px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-    top: -50px;
-    right: 80px;
-    z-index: 5;
-}
-
-/*Daily Special Card Description*/
-#ds-descr {
-    color: #161515;
-    font-size: 23px;
-    text-align: left;
-}
-
-/*Dialy Special Image Dimensions*/
-.ds-img {
-    height: 500px;
-    overflow: hidden;
-}
-
-/*Product Card Image Dimensions*/
-.ds-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-    object-position: center 71%;
-}
-
-/*Daily Special Text Block*/
-.ds-text {
-    flex: 1;
-    max-width: 1000px;
-}
-
-/*Section Title (Daily Special)*/
-.ds-section-title {
-    font-size: 30px;
-    color: #FFF287;
-    text-align: left;
-    font-weight: 800;
-}
-
-/*Daily Special Title*/
-.ds-title {
-    font-size: 120px;
-    color: white;
-    text-align: left;
-    font-family: 'Dancing Script';
-}
-
-/*Section Description*/
-.ds-descr {
-    font-size: 28px;
-    color: #fbf6cc;
-    text-align: left;
-    line-height: 2.0;
-    text-align: left;
-    padding-bottom: 30px;
-}
-
-/*Order Now Button*/
-.order-btn {
-    background: #FFF287;
-    color: #8A0000;
-    padding: 10px 30px;
-    border-color: #FFF287;
-    border: 4px solid #FFF287;
-    font-weight: 400;
-    font-size: 25px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-/*When Hovering Over the Order Now Button*/
-.order-btn:hover {
-    background: transparent;
-    border: 4px solid #FFF287;
-    color: white;
-}
-
-/*--------------------------------------------------------------------------------*/
-/*PRODUCTS MINI MENU*/
-
-/*Seedling Icon*/
-.pp i {
-    color: #FFF287;
-    font-size: 55px;
-    margin: 0;
-    line-height: 0%;
-}
-
-/*MINI MENU HEADER*/
-.menu-header {
-    font-size: 40px;
-    font-family: 'Dancing Script', 'Sans-Serif';
-    text-align: center;
-    align-items: center;
-    color: white;
-    margin: 0;
-    padding: 0;
-    gap: 0;
-}
-
-.menu-header h1 {
-    font-size: 90px;
-    margin-bottom: 25px;
-    position: relative;
-    padding-bottom: 20px;
-}
-
-.menu-header h1::after {
-    content: '';
-    position: absolute;
-    width: 350px;
-    height: 4px;
-    bottom: 0;
-    left: 0;
-    background: #927866;
-    border-radius: 5px;
-    margin-left: 890px;
-}
-
-/*Menu Grid*/
-.product-menu {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 70px;
-    padding-left: 28px;
-    padding-right: 28px;
-    padding-top: 70px;
-    padding-bottom: 150px; 
-    animation: fadeLong 1s ease-out; 
-}
-
-/*Product Cards*/
-.product-card {
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    transition: all 0.4s ease;
-    position: relative;
-    top: 0;
-    padding-bottom: 15px;
-    box-shadow: 0 10px 20px rgba(52, 43, 43, 0.4);
-}
-
-/*Move the Cards Upward When Hovering Over the Product Cards*/
-.product-card:hover {
-    transform: translateY(-15px);
-    border: 2px solid #FFF287;
-}
-
-/*Product Image Dimensions*/
-.product-img {
-    height: 500px;
-    overflow: hidden;
-}
-
-/*Product Card Image Dimensions*/
-.product-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-/*Amount of Zoom When Hovering Over Product Cards*/
-.product-card:hover .product-img img {
-    transform: scale(1.05);
-}
-
-/*Product Info Section*/
-.product-info {
-    padding-left: 25px;
-    padding-right: 25px;
-    position: relative;
-    text-align: left;
-}
-
-/*Product Tags (BESTSELLER, NEW, LIMITED)*/
-.product-tag {
-    position: absolute;
-    top: -60px;
-    right: 4%;
-    background: #FFF287;
-    color: #8A0000;
-    padding: 10px 30px;
-    border-radius: 30px;
-    font-weight: 600;
-    font-size: 20px;
-}
-
-/*Product Names*/
-.product-name {
-    font-size: 35px;
-    color: #8A0000;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-/*Product Descriptions*/
-.product-descr {
-    color: #161515;
-    margin-bottom: 30px;
-    font-size: 21px;
-}
-
-/*Product Footer*/
-.product-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/*Product Price*/
-.product-price {
-    font-size: 40px;
-    font-weight: 750;
-    color: #8A0000;
-    padding-bottom: 10px;
-}
-
-/*Product Rating*/
-.product-rating {
-    color: rgb(228, 194, 2);
-    font-size: 25px;
-}
-
-/*--------------------------------------------------------------*/
-/*FOOTER STYLES*/
-/*START OF AI HELP PROMPT*/
-footer {
-    position: relative;            
-    background-color: #161515;        
-    padding: 30px 20px;
-    border-top: 6px solid #FFF287;
-    overflow: hidden;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-/* Semi-Transparent Coffee Beans Image for Footer Background */
-footer::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: url("../images/coffee-beans.png") repeat center center;
-    background-size: cover;
-    background-position: bottom;
-    opacity: 0.1;                      
-}
-
-/* Ensure all footer content is above the image */
-footer * {
-    position: relative;
-    z-index: 1;
-}
-/*END OF AI PROMPT*/
-
-/*Footer Grid Layout*/
-.footer {
-    display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(50px, 0.25fr));
-    margin-top: 10px;
-}
-
-/*Quick Links & Contact Us Section*/
-.quick-links a , .contact-us {
-    color: white;
-    font-size: 20px;
-    padding-left: 20px;
-    text-decoration: none;
-}
-
-/*When Hovering Over Text Links*/
-.quick-links a:hover {
-    color: #FFF287;
-    transition: all 0.3s ease;
-}
-
-/*Social Media Icons*/
-.social-media a {
-    color: white;
-    font-size: 22px;
-    gap: 50px;
-    margin: 5px;
-    flex-direction: row;
-    text-decoration: none;
-    background: #71543f;
-    border-radius: 50%;
-    padding: 8px;
-}
-
-.social-media a:hover {
-    color: #8A0000;
-    transition: all 0.3s ease;
-}
-
-h3 {
-    color: #FFF287;
-    font-size: 24px;
-    padding-left: 20px;
-}
-
-/*Newsletter Section*/
-.footer {
-    position: relative;
-}
-
-.newsletter button {
-    border-radius: 22px;
-    background: #FFF287;
-    padding: 10px 30px;
-    font-weight: 200;
-    font-size: 20px;
-    width: 765px;
-    height: 50px;
-    border-radius: 22px;
-    color: #8A0000;
-    margin-top: 10px;
-}
-
-.newsletter {
-    display: flex;
-    flex-direction: column;   
-    align-items: center;
-    padding-left: 180px;
-}
-
-.newsletter form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-#nl-btn:hover{
-    background: #927866;
-    color: white;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.newsletter input {
-    background: white;
-    padding: 10px 30px;
-    font-weight: 200;
-    font-size: 20px;
-    width: 700px;
-    border-radius: 22px;
-    color: #8A0000;
-}
-
-.newsletter h1 {
-    font-size: 40px;
-    color: #FFF287;
-}
-
-.f3-column {
-    display: flex;
-    align-items: flex-start;
-    gap: 80px;
-    position: relative;
-    padding-bottom: 70px;
-}
-
-.f1-column h3, .f2-column h3, .f3-column h1 {
-    margin-bottom: 25px;
-    position: relative;
-    padding-bottom: 15px;
-}
-
-.f1-column h3::after, .f2-column h3::after {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 4px;
-    bottom: 0;
-    left: 0;
-    background: #927866;
-    margin-left: 20px;
-    border-radius: 5px;
-}
-
-.f3-column h1::after {
-    content: '';
-    position: absolute;
-    width: 250px;
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    background: #927866;
-    border-radius: 5px;
-}
-
-/*Copyright Section*/
-.copyright {
-    color: #faf3b1;
-    font-size: 20px;
-    text-align: center;
-    border-top: 1px solid rgba(246, 248, 162, 0.1);
-    padding-top: 20px;
-}
-
-/*Animations*/
-@keyframes fade {
-    from {
-        opacity: 0;
-        transform: translateX(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeLong {
-    from {
-        opacity: 0;
-        transform: translateY(100px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/*--------------------------------------------------------------------*/
-/*ABOUT PAGE STYLES*/
-.about-text {
-    flex: 1 1 400px;
-    width: 900px;
-}
-
-.about-us {
-    background: #483223;
-    padding: 80px 70px;
-    animation: fade 1s ease-out;
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
-    max-width: auto;
-}
-
-.about-us h1 {
-    font-size: 150px;
-    font-family:  'Dancing Script';
-    color: white;
-    margin-bottom: 25px;
-    position: relative;
-    padding-bottom: 15px;
-}
-
-.about-us h1::after {
-    content: '';
-    position: absolute;
-    width: 300px;
-    height: 4px;
-    bottom: 0;
-    left: 0;
-    background: #FFF287;
-    border-radius: 5px;
-}
-
-.about-us p {
-    font-size: 35px;
-    font-family: 'Vend Sans', 'Sans-Serif';
-    color: #faf5c3;
-}
-
-.about-img {
-    flex: 1 1 100px;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.about-img img {
-    width: 100%;
-    max-width: 700px;
-    border-radius: 10px;
-    height: 800px;
-}
-
-/*Our Vision Section*/
-.vision-text {
-    flex: 1 1 400px;
-    width: 900px;
-}
-
-.vision {
-    background: #71543f;
-    padding: 80px 70px;
-    animation: fade 1s ease-out;
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
-    max-width: auto;
-    margin: 0 0 100px;
-    border-top: 8px solid #FFF287;
-}
-
-.vision h1 {
-    font-size: 150px;
-    font-family:  'Dancing Script';
-    color: white;
-    margin-bottom: 25px;
-    position: relative;
-    padding-bottom: 15px;
-    text-align: right;
-    margin-top: 0;
-}
-
-.vision h1::after {
-    content: '';
-    position: absolute;
-    margin-left: 850px;
-    width: 300px;
-    height: 4px;
-    bottom: 0;
-    left: 0;
-    background: #FFF287;
-    border-radius: 5px;
-    align-items: right;
-}
-
-.vision p {
-    font-size: 35px;
-    font-family: 'Vend Sans', 'Sans-Serif';
-    color: #faf5c3;
-    text-align: right;
-}
-
-.vision-img {
-    flex: 1 1 100px;
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 0;
-}
-
-.vision-img img {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 10px;
-    height: 600px;
-}
-
-/* ========================================================= */
-/* ========== Popular Picks Section - drinks ========== */
-/* ========================================================= */
-
-/* Title Section */
-.section-title {
-  text-align: center;
-  padding: 40px 0;
-}
-
-.section-title .icon {
-  font-size: 40px;
-  margin-bottom: 10px;
-  color: #fff;
-}
-
-.section-title h2 {
-  font-size: 40px;
-  font-weight: 600;
-  color: #fff;
-  font-family: 'Dancing Script', 'Sans-Serif';  /* keep Café Luna front */
-}
-
-.section-title .underline {
-  width: 180px;
-  height: 4px;
-  background: #f5e083;
-  margin: 10px auto 0;
-  border-radius: 4px;
-}
-
-/* Card Layout */
-.cards-container {
-  display: flex;
-  justify-content: center;
-  gap: 28px;
-  padding: 20px 40px 50px;
-  flex-wrap: wrap;
-}
 
 /* All text inside the cards = Vend Sans */
-.cards-container * {
-  color: #fff;  
-  font-family: 'Vend Sans', 'Sans-Serif';  /* cards Vend Sans */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: #1f1f1f;
+    font-family: "Playfair Display", serif;
+    padding: 40px 0 60px;
+}
+
+/* ====== Card Layout ====== */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.menu-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    /* Cards move to next row */
+    justify-content: center;
+    /* Center each row */
+    gap: 2.5rem;
+    /* Spacing between cards */
+    width: 100%;
+    max-width: 1200px;
+    /* Max row width = 3 cards */
+    margin: 0 auto;
+    /* Center container */
+    padding: 2rem 1rem 4rem;
 }
 
 .card {
-  background: #2c2c2c;
-  width: 350px;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0px 6px 14px rgba(0,0,0,0.6);
-  transition: transform 0.3s ease;
+    width: 340px;
+    background: #ffffff;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .card:hover {
-  transform: translateY(-8px);
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.45);
 }
 
-.card img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
+.card-image {
+    position: relative;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.card-image img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.card:hover .card-image img {
+    transform: scale(1.05);
+    filter: brightness(1.12);
+}
+
+.badge-new {
+    font-family: "Poppins";
+    background: #ffd752;
+    color: #3a2f00;
+}
+
+.badge-bestseller {
+    font-family: "Poppins";
+    background: #ffd752;
+    color: #3a2f00;
 }
 
 .card-body {
-  padding: 18px 22px 24px;
+    padding: 2.3rem 2rem 1.9rem;
+    z-index: 1;
 }
 
-/* Badge */
-.header-block {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
+.card-title {
+    font-family: "Poppins";
+    font-size: 1.6rem;
+    color: #8b0000;
+    text-align: center;
+    margin-bottom: 0.9rem;
 }
 
-.badge {
-  display: inline-block;
-  margin-bottom: 6px;
-  font-size: 12px;
-  padding: 4px 10px;
-  border-radius: 12px;
-  font-weight: 700;
-  color: #000;
+.card-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #454545;
+    text-align: left;
+    margin-bottom: 1.4rem;
 }
 
-.bestseller,
-.new {
-  background: #ffd447; 
-}
-
-.badge.placeholder {
-  visibility: hidden;
-  padding: 4px 10px;
-}
-
-/* Text Content */
-.title {
-  font-size: 22px;
-  margin: 10px 0 8px;
-}
-
-.desc {
-  font-size: 14px;
-  color: #ccc;
-  line-height: 1.5;
-  margin-bottom: 16px;
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .price {
-  font-size: 20px;
-  color: #ff4d4d;
-  font-weight: bold;
-  margin-bottom: 4px;
+    font-family: "Poppins";
+    font-size: 1.5rem;
+    color: #b00000;
+    font-weight: 700;
 }
 
-/* Stars */
 .stars {
-  font-size: 18px;
-  color: #ffdd55;
-  letter-spacing: 1px;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    color: #f5c34b;
+}
+
+/* RESPONSIVE LAYOUT FOR SMALLER SCREENS */
+@media (max-width: 1100px) {
+    .menu-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.menu-title {
+    font-family: "Dancing Script";
+    font-size: 2.6rem;
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.menu-title::after {
+    content: "";
+    display: block;
+    width: 150px;
+    /* length of underline*/
+    height: 3px;
+    background: #ffd752;
+    margin: 0.5rem auto 0;
+    /* Center the underline */
+    border-radius: 2px;
+}
+
+/* BADGE OVERRIDE */
+.badge {
+    position: absolute;
+    z-index: 10;
+    right: 20px;
+    /* ← Ensure badge stays above card */
+    bottom: -14px;
+    padding: 6px 16px;
+    background: #ffe08a;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #4d3700;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
