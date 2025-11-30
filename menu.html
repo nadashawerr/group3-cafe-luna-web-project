@@ -1,68 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!--Google Font Family Link (Vend Sans)-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet" />
+
+  <!--Dancing Script Font Link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Vend+Sans:ital,wght@0,300..700&display=swap"
+    rel="stylesheet" />
 </head>
+
 <body>
-<!-- Navigation -->
-<section class="section-title">
-    <div class="icon">☕</div>
-    <h2>Popular Picks</h2>
-    <div class="underline"></div>
-  </section>
+  <h3 class="menu-title">Popular Picks</h3>
 
-  <section class="cards-container">
+  <div class="menu-wrapper">
 
-    <!-- Product 1 -->
-    <div class="card">
-      <img src="images/matcha.jpg" alt="Matcha Latte">
-      <div class="card-body">
-        <span class="badge bestseller">BESTSELLER</span>
-        <h3 class="title">Matcha Latte</h3>
-        <p class="desc">
-          A rich and velvety combination of ceremonial-grade matcha and steamed milk, delivering a perfectly
-          balanced cup with earthy sweetness.
-        </p>
-        <p class="price">$6.99</p>
-        <p class="stars">★★★★★</p>
+    <!-- Item 6 -->
+    <article class="card">
+      <div class="card-image">
+        <img src="images/coldbrew.jpg" alt="White Velvet Cold Brew" />
+
+        <span class="badge badge-bestseller">BESTSELLER</span>
       </div>
-    </div>
-
-    <!-- Product 2 -->
-    <div class="card">
-      <img src="images/latte.jpg" alt="Latte">
       <div class="card-body">
-        <span class="badge placeholder"></span>
-        <h3 class="title">Latte</h3>
-        <p class="desc">
-          A smooth blend of espresso and steamed milk, topped with light foam for a creamy, 
-          balanced flavor that’s perfect any time of day.
+        <h2 class="card-title">White Velvet Cold Brew</h2>
+        <p class="card-text">
+          A smooth and creamy cold brew topped with a light vanilla foam, offering a refreshing sweetness with every
+          sip.
         </p>
-        <p class="price">$5.99</p>
-        <p class="stars">★★★★☆</p>
+        <div class="card-bottom">
+          <span class="price">$6.99</span>
+          <span class="stars">★ ★ ★ ★ ★</span>
+        </div>
       </div>
-    </div>
+    </article>
 
-    <!-- Product 3 -->
-    <div class="card">
-      <img src="images/Cappuccino.jpg" alt="Cappuccino">
+    <!-- Item 3 -->
+    <article class="card">
+      <div class="card-image">
+        <img src="images/matcha.jpg" alt="Matcha Latte" />
+        <span class="badge badge-bestseller">BESTSELLER</span>
+      </div>
       <div class="card-body">
-        <span class="badge new">NEW</span>
-        <h3 class="title">Cappuccino</h3>
-        <p class="desc">
-          A classic mix of espresso, warm milk, and thick velvety foam, delivering a rich taste 
+        <h2 class="card-title">Matcha Latte</h2>
+        <p class="card-text">
+          A rich and velvety combination of ceremonial-grade matcha and steamed milk,
+          delivering a perfectly balanced cup with earthy sweetness.
+        </p>
+        <div class="card-bottom">
+          <span class="price">$5.99</span>
+          <span class="stars">★ ★ ★ ★ ★</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Item 2 -->
+    <article class="card">
+      <div class="card-image">
+        <img src="images/latte.jpg" alt="Latte" />
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">Latte</h2>
+        <p class="card-text">
+          A smooth blend of Espresso and steamed milk, topped with light foam for a creamy,
+          balanced flavour that’s perfect any time of day.
+        </p>
+        <div class="card-bottom">
+          <span class="price">$4.99</span>
+          <span class="stars">★ ★ ★ ★ ☆</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Item 4 -->
+    <article class="card">
+      <div class="card-image">
+        <img src="images/Macchiato.webp" alt="Caramel Macchiato" />
+        <!-- <span class="badge badge-bestseller">BESTSELLER</span> -->
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">Caramel Macchiato</h2>
+        <p class="card-text">
+          A layered Espresso drink sweetened with vanilla and drizzled with caramel, combining bold coffee notes with a
+          smooth, buttery finish.
+        </p>
+        <div class="card-bottom">
+          <span class="price">$6.99</span>
+          <span class="stars">★ ★ ★ ★ ☆</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Item 5 -->
+    <article class="card">
+      <div class="card-image">
+        <img src="images/mocha.webp" alt="Mocha" />
+
+        <span class="badge badge-new">NEW</span>
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">Mocha</h2>
+        <p class="card-text">
+          Rich Espresso blended with silky chocolate and steamed milk, creating a warm, comforting balance of cocoa and
+          coffee.
+        </p>
+        <div class="card-bottom">
+          <span class="price">$5.99</span>
+          <span class="stars">★ ★ ★ ★ ☆</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Item 1 -->
+    <article class="card">
+      <div class="card-image">
+        <img src="images/Cappuccino.jpg" alt="Cappuccino">
+        <span class="badge badge-new">NEW</span>
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">Cappuccino</h2>
+        <p class="card-text">
+          A classic mix of Espresso, warm milk, and thick velvety foam, delivering a rich taste
           with a perfectly airy finish.
         </p>
-        <p class="price">$5.99</p>
-        <p class="stars">★★★★☆</p>
+        <div class="card-bottom">
+          <span class="price">$4.99</span>
+          <span class="stars">★ ★ ★ ☆ ☆</span>
+        </div>
       </div>
-    </div>
-
-  </section>
+    </article>
+  </div>
 </body>
+
 </html>
