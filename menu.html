@@ -1,79 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-</head>
-<body>
+
+    <title>Menu</title>
+
+    <!--Google Font Family Link (Vend Sans)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Dancing Script Font Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Styles Sheet Link-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--Font Awesome Kit Link for Icons-->
+    <script
+      src="https://kit.fontawesome.com/39589cb536.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="menubar">
-
-        <ul class="menu_links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html" class="active">Menu</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-
+      <ul class="menu_links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
     </nav>
-    <!-- Main Content -->
-<!-- Navigation -->
-<section class="section-title">
-    <div class="icon">☕</div>
-    <h2>Popular Picks</h2>
-    <div class="underline"></div>
-  </section>
 
-  <section class="cards-container">
-
-    <!-- Product 1 -->
-    <div class="card">
-      <img src="images/matcha.jpg" alt="Matcha Latte">
-      <div class="card-body">
-        <span class="badge bestseller">BESTSELLER</span>
-        <h3 class="title">Matcha Latte</h3>
-        <p class="desc">
-          A rich and velvety combination of ceremonial-grade matcha and steamed milk, delivering a perfectly
-          balanced cup with earthy sweetness.
-        </p>
-        <p class="price">$6.99</p>
-        <p class="stars">★★★★★</p>
+    <!--Menu Header-->
+    <div class="menu-pg-title">
+      <div class="pp">
+        <i class="fa-solid fa-utensils"></i>
+        <h1>Our Menu</h1>
       </div>
     </div>
 
-    <!-- Product 2 -->
-    <div class="card">
-      <img src="images/latte.jpg" alt="Latte">
-      <div class="card-body">
-        <span class="badge placeholder"></span>
-        <h3 class="title">Latte</h3>
-        <p class="desc">
-          A smooth blend of espresso and steamed milk, topped with light foam for a creamy, 
-          balanced flavor that’s perfect any time of day.
-        </p>
-        <p class="price">$5.99</p>
-        <p class="stars">★★★★☆</p>
-      </div>
-    </div>
+    <!--Menu Grid-->
+    <section>
+      <!--GRID #1-->
+      <div class="product-menu">
+        <!--PRODUCT 1-->
+        <div class="product-card">
+          <!--Products Images-->
+          <div class="product-img">
+            <img src="images/10.jpg" alt="Product 1" />
+          </div>
 
-    <!-- Product 3 -->
-    <div class="card">
-      <img src="images/Cappuccino.jpg" alt="Cappuccino">
-      <div class="card-body">
-        <span class="badge new">NEW</span>
-        <h3 class="title">Cappuccino</h3>
-        <p class="desc">
-          A classic mix of espresso, warm milk, and thick velvety foam, delivering a rich taste 
-          with a perfectly airy finish.
-        </p>
-        <p class="price">$5.99</p>
-        <p class="stars">★★★★☆</p>
-      </div>
-    </div>
+          <!--Product Information-->
+          <div class="product-info">
+            <!--Product Name-->
+            <h3 class="product-name">Brown Sugar Shaken Espresso</h3>
 
-  </section>
-</body>
+            <!--Product Description-->
+            <p class="product-descr">
+              Bold espresso shaken with caramelized brown sugar syrup and poured
+              over ice for a smooth, sweet, energizing kick.
+            </p>
+
+            <!--Product Footer-->
+            <div class="product-footer">
+              <!--Product Price-->
+              <div class="product-price">$5.99</div>
+
+              <!--Product Star Rating-->
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--PRODUCT 2-->
+        <div class="product-card">
+          <!--Products Images-->
+          <div class="product-img">
+            <img src="images/11.jpg" alt="Product 2" />
+          </div>
+
+          <!--Product Information-->
+          <div class="product-info">
+            <!--Product Tage-->
+            <div class="product-tag">POPULAR</div>
+
+            <!--Product Name-->
+            <h3 class="product-name">Zesty Lemon Drizzle Loaf</h3>
+
+            <!--Product Description-->
+            <p class="product-descr">
+              Moist lemon cake topped with a bright citrus glaze. Fresh, tangy,
+              and the perfect sweet bite with any drink.
+            </p>
+
+            <!--Product Footer-->
+            <div class="product-footer">
+              <!--Product Price-->
+              <div class="product-price">$4.25</div>
+
+              <!--Product Star Rating-->
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--PRODUCT 3-->
+        <div class="product-card">
+          <!--Products Images-->
+          <div class="product-img">
+            <img src="images/12.jpeg" alt="Product 3" />
+          </div>
+
+          <!--Product Information-->
+          <div class="product-info">
+            <!--Product Tage-->
+            <div class="product-tag">NEW</div>
+
+            <!--Product Name-->
+            <h3 class="product-name">Blueberry Lavender Latte</h3>
+
+            <!--Product Description-->
+            <p class="product-descr">
+              A calming floral latte infused with lavender and a hint of
+              blueberry sweetness. Soft, dreamy, and super Instagrammable.
+            </p>
+
+            <!--Product Footer-->
+            <div class="product-footer">
+              <!--Product Price-->
+              <div class="product-price">$6.25</div>
+
+              <!--Product Star Rating-->
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--GRID #2-->
+      <div class="product-menu">
+        <!--PRODUCT 1-->
+        <div class="product-card">
+          <!--Products Images-->
+          <div class="product-img">
+            <img src="images/4.jpg" alt="Product 1" />
+          </div>
+
+          <!--Product Information-->
+          <div class="product-info">
+            <!--Product Name-->
+            <h3 class="product-name">Cocoa Dust Cappuccino</h3>
+
+            <!--Product Description-->
+            <p class="product-descr">
+              A smooth, creamy blend of rich espresso topped with silky steamed
+              milk and a cloud-soft foam. Light, warm, and timeless; your
+              perfect everyday pick-me-up.
+            </p>
+
+            <!--Product Footer-->
+            <div class="product-footer">
+              <!--Product Price-->
+              <div class="product-price">$5.25</div>
+
+              <!--Product Star Rating-->
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--PRODUCT 2-->
+        <div class="product-card">
+          <!--Products Images-->
+          <div class="product-img">
+            <img src="images/5.jpg" alt="Product 2" />
+          </div>
+
+          <!--Product Information-->
+          <div class="product-info">
+            <!--Product Name-->
+            <h3 class="product-name">Classic Velvet Cappuccino</h3>
+
+            <!--Product Description-->
+            <p class="product-descr">
+              A smooth, creamy blend of rich espresso topped with silky steamed
+              milk and a cloud-soft foam. Light, warm, and timeless; your
+              perfect everyday pick-me-up.
+            </p>
+
+            <!--Product Footer-->
+            <div class="product-footer">
+              <!--Product Price-->
+              <div class="product-price">$4.75</div>
+
+              <!--Product Star Rating-->
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--PRODUCT 3-->
+        <div class="product-card">
+          <!--Products Images-->
+          <div class="product-img">
+            <img src="images/6.jpg" alt="Product 3" />
+          </div>
+
+          <!--Product Information-->
+          <div class="product-info">
+            <!--Product Tage-->
+            <div class="product-tag">POPULAR</div>
+
+            <!--Product Name-->
+            <h3 class="product-name">Ceremonial Matcha Latte</h3>
+
+            <!--Product Description-->
+            <p class="product-descr">
+              Hand-whisked Japanese ceremonial-grade matcha blended with creamy
+              milk. Smooth, earthy, and energizing with a naturally sweet
+              finish.
+            </p>
+
+            <!--Product Footer-->
+            <div class="product-footer">
+              <!--Product Price-->
+              <div class="product-price">$5.50</div>
+
+              <!--Product Star Rating-->
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--GRID #3-->
+      <div class="product-menu">
+        <!--PRODUCT 1-->
+        <div class="product-card">
+          <!--Products Images-->
+          <div class="product-img">
+            <img src="images/7.jpg" alt="Product 1" />
+          </div>
+
+          <!--Product Information-->
+          <div class="product-info">
+            <!--Product Name-->
+            <h3 class="product-name">Frosted Cinnamon Swirl</h3>
+
+            <!--Product Description-->
+            <p class="product-descr">
+              Soft, warm cinnamon roll baked to golden perfection, swirled with
+              brown sugar + spice, then topped with a creamy vanilla glaze that
+              melts right into every bite. Cozy, sweet, and impossible to
+              resist.
+            </p>
+
+            <!--Product Footer-->
+            <div class="product-footer">
+              <!--Product Price-->
+              <div class="product-price">$4.50</div>
+
+              <!--Product Star Rating-->
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--PRODUCT 2-->
+        <div class="product-card">
+          <!--Products Images-->
+          <div class="product-img">
+            <img src="images/8.jpg" alt="Product 2" />
+          </div>
+
+          <!--Product Information-->
+          <div class="product-info">
+            <!--Product Tage-->
+            <div class="product-tag">BESTSELLER</div>
+
+            <!--Product Name-->
+            <h3 class="product-name">Golden Butter Croissant</h3>
+
+            <!--Product Description-->
+            <p class="product-descr">
+              Flaky, airy, melt-in-your-mouth layers of golden French butter
+              pastry. Perfect with a cappuccino or on its own.
+            </p>
+
+            <!--Product Footer-->
+            <div class="product-footer">
+              <!--Product Price-->
+              <div class="product-price">$3.95</div>
+
+              <!--Product Star Rating-->
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--PRODUCT 3-->
+        <div class="product-card">
+          <!--Products Images-->
+          <div class="product-img">
+            <img src="images/9.jpg" alt="Product 3" />
+          </div>
+
+          <!--Product Information-->
+          <div class="product-info">
+            <!--Product Name-->
+            <h3 class="product-name">Strawberry Dream Cheesecake Slice</h3>
+
+            <!--Product Description-->
+            <p class="product-descr">
+              Creamy vanilla cheesecake on a buttery graham base, topped with
+              sweet strawberry glaze and fresh berries. Light, fruity, and
+              irresistible.
+            </p>
+
+            <!--Product Footer-->
+            <div class="product-footer">
+              <!--Product Price-->
+              <div class="product-price">$6.50</div>
+
+              <!--Product Star Rating-->
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <!--Footer Column 1-->
+          <div class="f1-column">
+            <!--Contact Us Section-->
+            <h3>Contact Us</h3>
+            <div class="contact-us">
+              <p>123 Semour St, Vancouver, BC</p>
+              <p>(+1) 111-222-333</p>
+              <p>cafeluna@gmail.com</p>
+              <p><b>Mon-Sat:</b> 7am - 11pm</p>
+            </div>
+          </div>
+
+          <!--Footer Column 2-->
+          <div class="f2-column">
+            <!--Quick Links List-->
+            <h3>Quick Links</h3>
+            <div class="quick-links">
+              <p><a href="about.html" target="_blank">About Us</a></p>
+              <p><a href="menu.html" target="_blank">Full Menu</a></p>
+              <p><a href="" target="_blank">Donate</a></p>
+            </div>
+
+            <br />
+
+            <!--Social Media Icons-->
+            <div class="social-media">
+              <a href="https://www.facebook.com"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="https://www.instagram.com"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.tiktok.com"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+              <a href="https://www.x.com"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+
+          <!--Footer Column 3-->
+          <div class="f3-column">
+            <!--Newsletter Section-->
+            <div class="newsletter">
+              <h1>Subscribe to our Newsletter</h1>
+              <form>
+                <input type="email" placeholder="Email" required />
+                <input type="text" placeholder="Full Name" />
+                <button id="nl-btn">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!--Copyright Section-->
+        <div class="copyright">&copy; 2025 CafeLuna. All rights reserved.</div>
+      </div>
+    </footer>
+  </body>
 </html>
